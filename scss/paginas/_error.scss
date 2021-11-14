@@ -1,0 +1,51 @@
+.fondo-error {
+  background: url(../imagenes/fondo-error.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+.error-content {
+  margin-top: 20px;
+  max-width: 600px;
+  text-align: center;
+  text-shadow: $color-secundario;
+  color: #ccc;
+  position: relative;
+  h1 {
+    font-size: 18vw;
+    line-height: 1em;
+    text-shadow: 2px 0 0 $color-secundario, -2px 0 0 $color-secundario,
+      0 2px 0 $color-secundario, 0 -2px 0 $color-secundario,
+      1px 1px 0 $color-secundario, -1px -1px 0 $color-secundario,
+      1px -1px 0 $color-secundario, -1px 1px 0 $color-secundario,
+      1px 1px 5px $color-secundario;
+  }
+  h4 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    max-width: 600px;
+    font-size: 2.5em;
+    color: $color-secundario;
+  }
+  .error-btns {
+    display: inline-flex;
+    a {
+      background: rgba(255, 255, 255, 0);
+      color: red;
+      display: inline-block;
+      margin: 0 10px;
+      text-decoration: none;
+      border: 2px solid $color-secundario;
+      font-weight: 500;
+      padding: 10px 25px;
+      border-radius: 25px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      &:hover {
+        color: white;
+        background-color: $color-secundario;
+      }
+    }
+  }
+}

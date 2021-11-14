@@ -1,0 +1,36 @@
+.iniciar {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  @include box;
+}
+
+@media (max-width: 772px) {
+  .iniciar {
+    .form-registrer {
+      width: 400px;
+    }
+  }
+}
+@media (max-width: 508px) {
+  .iniciar {
+    .form-registrer {
+      width: 280px;
+    }
+  }
+}
+@media (max-width: 431px) {
+  .iniciar {
+    .form-registrer {
+      width: 190px;
+    }
+  }
+}
+
+@media (max-width: 318px) {
+  .iniciar {
+    .form-registrer {
+      width: 145px;
+    }
+  }
+}

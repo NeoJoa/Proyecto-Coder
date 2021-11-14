@@ -1,0 +1,21 @@
+.carta {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  @include box;
+}
+
+@media (max-width: 772px) {
+  .carta {
+    .form-registrer {
+      width: 400px;
+    }
+  }
+}
+@media (max-width: 508px) {
+  .carta {
+    .form-registrer {
+      width: 280px;
+    }
+  }
+}

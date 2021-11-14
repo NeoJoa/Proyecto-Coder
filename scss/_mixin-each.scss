@@ -1,0 +1,31 @@
+@mixin box {
+  .form-registrer {
+    width: 500px;
+    background-color: #313940d8;
+    padding: 30px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 32px #000;
+    h2 {
+      font-size: 2rem;
+    }
+    input {
+      font-size: large;
+    }
+  }
+}
+
+@mixin nav {
+  background-color: $color-primario;
+  padding: 10px;
+}
+
+@each $fond, $lugar in $lista {
+  .#{$lugar}-fondo {
+    background-image: $fond;
+    background-size: cover;
+  }
+}

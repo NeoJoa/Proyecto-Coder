@@ -1,0 +1,132 @@
+.fondo-home {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(154, 20, 20, 1) 66%,
+    rgba(235, 40, 61, 1) 96%
+  );
+}
+#presentarPagina {
+  height: 25rem;
+  padding: 5rem;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.856) 25%,
+      rgba(70, 68, 68, 0)
+    ),
+    url(../imagenes/Presentacion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: right;
+  color: white;
+  font-weight: 600;
+  line-height: 1.3em;
+
+  h1 {
+    animation-duration: 2s;
+    animation-name: aparecer;
+
+    span {
+      color: $color-secundario;
+    }
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+section {
+  margin-bottom: 15px;
+
+  h2 {
+    padding-left: 10px;
+    border-bottom: 2px solid #c0bfbf85;
+    margin-bottom: 10px;
+    color: black;
+    text-shadow: 2px 0 white, -2px 0 white, 0 2px white, 0 -2px white,
+      1px 1px white, -1px -1px white, -1px 1px white, 1px -1px white;
+    font-size: $size-primario;
+    line-height: 2;
+    font-weight: 700;
+  }
+}
+
+.main--container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  place-content: center;
+  gap: 2rem;
+
+  .productos {
+    color: black;
+    padding: 0%;
+    font-size: 1rem;
+    &:hover button {
+      transform: scale(1.1);
+    }
+    .boton {
+      margin-bottom: 10px;
+      padding: 0.5rem;
+      color: white;
+      border-color: $color-secundario;
+      background-color: $color-secundario;
+      border-radius: 0.2rem;
+      cursor: pointer;
+      font-weight: 550;
+      font-size: 1rem;
+      &:hover {
+        border-color: white;
+        color: white;
+        background-color: rgb(192, 10, 10);
+        transition: 300ms linear;
+      }
+    }
+    div {
+      i {
+        color: white;
+        font-size: 4rem;
+        &:hover {
+          color: $color-secundario;
+        }
+      }
+    }
+  }
+}
+
+.metodos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+  place-content: center;
+  gap: 2rem;
+  div {
+    color: white;
+    i {
+      font-size: 4rem;
+    }
+
+    &:hover {
+      i,
+      h5 {
+        color: $color-secundario;
+      }
+    }
+  }
+}
+
+@media (max-width: 772px) {
+  .main--container {
+    grid-template-columns: repeat(auto-fit, 150px);
+  }
+}
