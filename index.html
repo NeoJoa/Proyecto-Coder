@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-------------------------------SEO----------------------------------->
+    <!--------Descripcion del Sitio----------->
+    <meta
+      name="description"
+      content="GAMESTORE, es una tienda virtual, donde puedes conseguir los mejores juegos de consolas a los mejores precios. No te quedes con las ganas."
+    />
+
+    <!--------Palabras Clave----------->
+    <meta
+      name="keywords"
+      content="gamestore, juegos digitales, juegos digitales ps3, juegos digitales ps4, tienda virtual, tienda de juegos, juegos digitales ps5, juegos ps3, juegos ps4, juegos ps5, tarjetas de regalo, Gift Card, cartera virtual"
+    />
+
+    <!--------Open Graph: Tipo----------->
+    <meta property="og:type" content="tienda" />
+
+    <!--------Open Graph: titulo----------->
+    <meta
+      property="og:title"
+      content="Juegos Digitales PS3/PS4/PS5 | GAMESTORE"
+    />
+
+    <!--------Open Graph: Logo del sitio----------->
+    <meta property="og:Image" content="./imagenes/logo.png" />
+
+    <!--------Open Graph: Nombre del Sitio----------->
+    <meta property="og:site_name" content="GAMESTORE" />
+
+    <!--------Open Graph: Descripcion----------->
+    <meta
+      property="og:description"
+      content="La mayor variedad de juegosdigitales para PS3, PS4 y PS5, al mejor precio y desde la comodidad de tu hogar."
+    />
+
+    <!--------Open Graph: Autor----------->
+    <meta property="og:autor" content="Joaquin Aquino" />
+
+    <!-------------------------------BOOTSTRAP----------------------------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-------------------------------Fonts----------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap"
+      rel="stylesheet"
+    />
+    <!-------------------------------Estilos----------------------------------->
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6762089592.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>GAMESTORE</title>
+  </head>
+  <body class="fondo-home">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="logo navbar-brand" href="/">
+          <i class="fas fa-gamepad"> </i>
+          <span>GAME</span>STORE
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse flex-grow-0"
+          id="navbarTogglerDemo02"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tienda/">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./faq/"><span id="texto"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ayuda/">Ayuda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./acceder/">Acceder</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control rounded-pill me-2"
+              type="search"
+              placeholder="Buscar..."
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-danger rounded-pill btn-rounded"
+              type="submit"
+            >
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <div id="presentarPagina">
+          <h1 class="display-3">Bienvenidos a <span>GAME</span>STORE</h1>
+        </div>
+      </section>
+      <section>
+        <div class="container espacio">
+          <h2>¿Buscas saber sobre la nueva generacion de consolas?</h2>
+          <div>
+            <div class="responsive-video">
+              <iframe
+                width="100%"
+                height="500"
+                src="https://www.youtube.com/embed/yDjf5aMjl_g"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container espacio">
+        <h2>Presentación de Productos</h2>
+        <div class="main--container">
+          <article class="card h-15 shadow p-0 mb-5 bg-body rounded productos">
+            <img
+              width="200"
+              height="250"
+              src="imagenes/port-AC Odyssey.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Precio</h5>
+              <button class="boton">COMPRAR</button>
+            </div>
+          </article>
+          <article class="card h-15 shadow p-0 mb-5 bg-body rounded productos">
+            <img
+              width="200"
+              height="250"
+              src="imagenes/port-BatmanAK.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Precio</h5>
+              <button class="boton">COMPRAR</button>
+            </div>
+          </article>
+          <article class="card h-15 shadow p-0 mb-5 bg-body rounded productos">
+            <img
+              width="200"
+              height="250"
+              src="imagenes/port-CODMW.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Precio</h5>
+              <button class="boton">COMPRAR</button>
+            </div>
+          </article>
+          <article class="card h-15 shadow p-0 mb-5 bg-body rounded productos">
+            <img
+              width="200"
+              height="250"
+              src="imagenes/Port-DBZK.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Precio</h5>
+              <button class="boton">COMPRAR</button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="container espacio">
+        <h3 class="text-center">
+          Envíos a todo Argentina. Tu compra está protegida por los medios de
+          pagos más seguros.
+        </h3>
+        <div class="metodos">
+          <article class="productos">
+            <div class="text-center">
+              <i class="fab fa-cc-visa"></i>
+            </div>
+          </article>
+          <article class="productos">
+            <div class="text-center">
+              <i class="fab fa-paypal"></i>
+            </div>
+          </article>
+          <article class="productos">
+            <div class="text-center">
+              <i class="fab fa-cc-mastercard"></i>
+            </div>
+          </article>
+          <article class="productos">
+            <div class="text-center">
+              <i class="fab fa-amazon-pay"></i>
+            </div>
+          </article>
+          <article class="productos">
+            <div class="text-center resaltar">
+              <i class="fas fa-money-bill-wave-alt"></i>
+              <h5>Efectivo</h5>
+            </div>
+          </article>
+          <article class="productos">
+            <div class="text-center">
+              <i class="fas fa-university"></i>
+              <h5>Transferencia Bancaria</h5>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="foot">
+        <h2 class="text-center text-white">SEGUINOS:</h2>
+        <div class="foot-icon">
+          <ul>
+            <li>
+              <a href="#" target="black"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#" target="black"><i class="fab fa-whatsapp"></i></a>
+            </li>
+            <li>
+              <a href="#" target="black"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#" target="black"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-end">
+        <p>Diseñado por: <span>Joaquín Aquino</span></p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
